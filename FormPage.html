@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--BootStrap CSS-->
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="FormPage.css">
+
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar navbar-expand-lg header-nav mb-5" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="pfs logo.png" alt="Precise Financial Systems">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Resources
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Careers</a>
+          </li>
+        </ul>
+        <form class="d-flex ml-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary ml-3" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="formpage">
+  <div class="container">
+
+     <!--Personal Information-->
+      <div class="form-title align-items-center">
+        <h2 class="fw-bold mb-3">
+          Personal Information
+        </h2>
+      </div>
+  
+      <div class="mb-3 row form-floating mt-5">
+        <label for="FullName" class="col-sm-2 col-form-label"><strong>Full Name</strong></label>
+        <div class="col-auto">
+          <input type="text"  id="lastName" class="form-control" placeholder="LastName">
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control"  id="firstName" placeholder="FirstName">
+        </div>
+        <div class="col-auto">
+          <input type="text" class="form-control"  id="MiddleName" placeholder="MiddleName">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="inputEmail" class="col-sm-2 col-form-label"><strong>Email Address</strong></label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail" placeholder="abc@example.com">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Gender" class="col-sm-2 col-form-label"><strong>Gender</strong></label>
+        <div class="form-check form-check-inline col-auto ml-3">
+          <input class="form-check-input" type="checkbox" value="" id="Male">
+          <label class="form-check-label" for="Male">
+            <strong>Male</strong>
+          </label>
+        </div>
+        <div class="form-check form-check-inline col-auto">
+          <input class="form-check-input" type="checkbox" value="" id="Female">
+          <label class="form-check-label" for="Female">
+            <strong>Female</strong>
+          </label>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="inputEmail" class="col-sm-2 col-form-label">Birth Date</label>
+        <div class="col-auto">
+          <select class="form-select form-control" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <div id="BirthMonth" class="form-text"><small>Month</small></div>
+        </div>
+        <div class="col-auto">
+          <select class="form-select form-control" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <div id="BirthDate" class="form-text"><small>Day</small></div>
+        </div>
+        <div class="col-auto">
+          <select class="form-select form-control" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">2022</option>
+            <option value="2">2021</option>
+            <option value="3">2020</option>
+            <option value="4">2019</option>
+            <option value="5">2018</option>
+            <option value="6">2017</option>
+            <option value="7">2016</option>
+            <option value="8">2015</option>
+            <option value="9">2014</option>
+            <option value="10">2013</option>
+            <option value="11">2012</option>
+            <option value="12">2011</option>
+            <option value="13">2010</option>
+            <option value="14">2009</option>
+            <option value="15">2008</option>
+            <option value="16">2007</option>
+            <option value="17">2006</option>
+            <option value="18">2005</option>
+            <option value="19">2004</option>
+            <option value="20">2003</option>
+            <option value="21">2002</option>
+            <option value="22">2001</option>
+            <option value="23">2000</option>
+            <option value="24">1999</option>
+          </select>
+          <div id="BirthYear" class="form-text"> <small>Year</small> </div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="phoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
+        <div class="col-sm-5">
+          <input type="tel" class="form-control" id="inputEmail" placeholder="(000)-000-0000">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Address</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>Street Address</small></div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-auto">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>City</small></div>
+        </div>
+        <div class="col-sm-auto">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>State</small></div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Upload Resume</label>
+        <div class="col-sm-10 mt-3">
+          <input class="form-control" type="file" id="formFile">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Why do you want to intern for us ?*</label>
+        <div class="col-sm-10 mt-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+  <!--Educational Information-->
+      <div class="form-title align-items-center">
+        <h2 class="fw-bold mb-3">
+          Education
+        </h2>
+      </div>
+
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Name of School</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="Address" placeholder="Federal University of Agriculture, Abeokuta">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">School Address</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>Street Address</small></div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-auto">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>City</small></div>
+        </div>
+        <div class="col-sm-auto">
+          <input type="text" class="form-control" id="Address" placeholder="">
+          <div id="Address" class="form-text"><small>State</small></div>
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Course of Study</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="Address" placeholder="">
+        </div>
+      </div>
+
+      <div class="mb-3 row">
+        <label for="Address" class="col-sm-2 col-form-label">Year of Study</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="Address" placeholder="3rd Year">
+        </div>
+      </div>
+
+      <div class="form-pagebreak-next-container mt-5 d-grid gap-2">
+        <button type="button" class="btn btn-outline-primary form-pagebreak-next jf-forms-buttons">Submit Application</button>
+      </div>
+  </div>
+</section>
+
+
+
+
+<!--Footer Section-->
+<div class="container mt-10">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <img src="PFS-Logo-footer.png" alt="">
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Precise Financial Systems Ltd.</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    </ul>
+  </footer>
+</div>
+
+
+<!--jQuery and BootStrap JS.-->
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src = "js/bootstrap.min.js"></script>
+  
+</body>
+</html>
